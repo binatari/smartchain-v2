@@ -34,7 +34,7 @@ const Posts = () => {
 
   if (error) {
     return (
-      <div className="container mx-auto flex justify-center p-7">
+      <div className="container mx-auto flex flex-col items-center gap-y-3 justify-center p-7">
         <p>Sorry there was an error getting posts</p>
         <button className="card" onClick={getPosts}>
           Retry
@@ -47,7 +47,7 @@ const Posts = () => {
     <div className="flex container mx-auto justify-center gap-4 flex-wrap  mt-10 " id="posts">
       <p className=" md:text-[56px] font-semibold max-w-sm">Explore inspiring posts</p>
       {posts.map((post) => (
-        <PostCard {...post} />
+        <PostCard {...post} key={post.id} />
       ))}
     </div>
   );

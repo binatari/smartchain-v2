@@ -6,7 +6,7 @@ const Authors = () => {
   return (
     <Marquee className="" autoFill>
       {authors.map((author) => (
-        <AuthorCard image={author} />
+        <AuthorCard image={author} key={author} />
       ))}
     </Marquee>
   );

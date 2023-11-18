@@ -2,7 +2,7 @@ import React from "react";
 
 const HomeHeader = () => {
   return (
-    <div className="px-3 py-6  fixed top-0 left-0 w-full">
+    <div className="px-3 py-6  fixed top-0 left-0 w-full z-[100]">
       <div className="flex justify-between items-center gap-3">
         <div>
           <p className=" md:text-lg font-semibold">Smartchain</p>

@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import { useRouter } from "next/router";
 import React from "react";
 
-const post = () => {
+const Post = () => {
   const { query } = useRouter();
   const id = query?.id as string;
   return (
@@ -21,4 +21,4 @@ const post = () => {
   );
 };
 
-export default post;
+export default Post;
