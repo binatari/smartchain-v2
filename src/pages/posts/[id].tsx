@@ -8,7 +8,7 @@ const Post = () => {
   const { query } = useRouter();
   const id = query?.id as string;
   return (
-    <div>
+    <div className="pt-14">
     <div className="flex container mx-auto ">
     <Link href={'/'}>
     <button className="card py-[12px_!important] mt-4">Back</button>
