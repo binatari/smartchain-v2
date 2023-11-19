@@ -49,3 +49,34 @@ body {
   white-space: nowrap;
 }
 
+.marquee {
+  display: flex;
+  /* height: 100vh; */
+  align-items: center;
+  cursor: -webkit-grab;
+  z-index: 1;
+}
+
+.item {
+  font-size: 30vw;
+  letter-spacing: -0.05em;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  user-select: none;
+  color: white;
+  /* will-change: transform; */
+}
+
+.drag {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #e6d5b8;
+}

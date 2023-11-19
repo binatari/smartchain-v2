@@ -1,14 +1,14 @@
 import { authors } from "@/lib/data";
 import React from "react";
-import Marquee from "react-fast-marquee";
 import AuthorCard from "../cards/AuthorCard";
+import { InteractiveMarquee } from "./Marquee";
 const Authors = () => {
   return (
-    <Marquee className="" autoFill>
+    <InteractiveMarquee>
       {authors.map((author) => (
         <AuthorCard image={author} key={author} />
       ))}
-    </Marquee>
+    </InteractiveMarquee>
   );
 };
 
