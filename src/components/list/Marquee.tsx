@@ -131,11 +131,11 @@ export const InteractiveMarquee: React.FC<MarqueeProps> = (props) => {
     speedSpring.set(0);
   };
 
-  const handleOnDrag = (_, info: PanInfo) => {
+  const handleOnDrag = (_: MouseEvent | TouchEvent | PointerEvent, info: PanInfo) => {
     speedSpring.set(dragFactor * -info.delta.x);
   };
 
-  const handleDragEnd = (_) => {
+  const handleDragEnd = () => {
     slowDown.current = false;
     marqueeRef.current?.classList.remove("drag");
     //rest to the original speed
