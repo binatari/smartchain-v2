@@ -57,15 +57,6 @@ body {
   z-index: 1;
 }
 
-.item {
-  font-size: 30vw;
-  letter-spacing: -0.05em;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  user-select: none;
-  color: white;
-  /* will-change: transform; */
-}
 
 .drag {
   cursor: -webkit-grabbing;
