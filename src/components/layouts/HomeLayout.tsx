@@ -4,7 +4,7 @@ import HomeHeader from "../header/HomeHeader";
 
 const HomeLayout = ({ children }: componentWithChildren) => {
   return (
-    <div>
+    <div className=" overflow-x-hidden">
       <HomeHeader />
       {children}
     </div>

@@ -174,7 +174,7 @@ export const InteractiveMarquee: React.FC<MarqueeProps> = (props) => {
   useRafLoop(loop);
 
   return (
-    <>
+    <div className=" overflow-x-hidden">
       <motion.div className="bg" style={{ opacity }} ref={constraintsRef} />
       <motion.div
         className="marquee"
@@ -192,6 +192,6 @@ export const InteractiveMarquee: React.FC<MarqueeProps> = (props) => {
         <MarqueeItem speed={speedSpring}>{children}</MarqueeItem>
         <MarqueeItem speed={speedSpring}>{children}</MarqueeItem>
       </motion.div>
-    </>
+    </div>
   );
 };
